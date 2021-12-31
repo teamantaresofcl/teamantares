@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team Antares Official</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ROSTER</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">WHAT IS ANTARES</a></li>
+                </ul>
+        </header>
+        <section>
+            <h2 id="text">Welcome to the family</h2>
+            <a href="#" id="btn">ANTARES FEED</a>
+        </section>
+    </body>
+    <body2>
+        <div class="slider">
+            <div class="slides">
+                
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="./images/pic-1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/pic-2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/pic-3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/pic-4.png" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                var counter = 1
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4){
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
+        </div>
+    </body2>
+    <body3>
+        <div class="text-box">
+            <h1>Meet Antares' Family</h1>
+        </div>
+    </body3>
+</html>
